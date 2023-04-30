@@ -191,8 +191,8 @@ def user_stats(df):
     # Asks user if they want raw data
     i = 1
     while True:
-        raw = input('\nWould you like to see some raw data? Enter yes or no.\n')
-        if raw.lower() == 'yes':
+        raw = input('\nWould you like to see some raw data? Enter y/n.\n')
+        if raw.lower() == 'y':
             print(df[i:i+5])
             i = i+5
         else:
